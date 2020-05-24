@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC>
+
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/css/static.css"/>
+    <style type="text/css">
+        h1
+        { color: white;
+} 
+
+*
+{
+margin:0px;
+}
+header,footer
+{
+ height:200px;
+ background-color: white;
+ color: fuchsia;
+}
+section
+{
+height: 500px;
+background-color: fuchsia;
+color: white;
+}
+
+a
+        {
+        text-decoration: none;    
+        float: left;
+        padding-left: 150px;
+        margin-left: 10px;
+        font-size: 22;
+        color: fuchsia;
+        }
+</style>
+</head>
+<body>
+<header>
+    <a href="index">Home</a>
+    <a href="about">about</a>
+    <a href="contact">contact</a>
+    <a href="services">services</a>
+    <a href="gallery">gallery</a>
+
+</header>
+<section>
+<center>
+<h1>Welcome in Services page</h1>
+
+<h2>New Register Form</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="emaail" name="txtemail" placeholder="Enter Email" required="" />
+    <br>
+    <br>
+    <input type="password" name="txtpass" placeholder="Enter password" required="" />
+    <br>
+    <br>
+    <input type="number" name="txtmobile" placeholder="Enter mobileno"/>
+    <br>
+    <br>
+    <input type="text" name="txtfname" placeholder="Enter Fullname"/>
+    <br>
+    <br>
+    <input type="text" name="txtaddress" placeholder="Enter Address"/>
+    <br>
+    <br>
+    <input  type="submit" name="btnssubmit" value="register" />
+</form>
+{{msg}}
+</center>
+</section>
+<footer>
+</footer>
+</body>
+</html>

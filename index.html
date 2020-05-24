@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE HTML PUBLIC>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/css/static.css"/>
+    <style type="text/css">
+        h1
+        { color: white;
+} 
+
+*
+{
+margin:0px;
+}
+header,footer
+{
+ height:200px;
+ background-color: white;
+ color: fuchsia;
+}
+section
+{
+height: 500px;
+background-color: fuchsia;
+color: white;
+}
+
+a
+        {
+        text-decoration: none;    
+        float: left;
+        padding-left: 150px;
+        margin-left: 10px;
+        font-size: 22;
+        color: fuchsia;
+        }
+</style>
+
+</head>
+<body>
+<header>
+    <a href="index">Home</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
+    <a href="services">Services</a>
+    <a href="gallery">Gallery</a>
+
+</header>
+<section>
+<h1>Welcome in Home page</h1>
+    <img src="{% static "C:\Users\pc\projectmanage\hrapp\static\css" %}" height="300" width="500"/>
+</section>
+<footer>
+</footer>
+</body>
+</html>
